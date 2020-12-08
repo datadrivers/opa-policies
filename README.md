@@ -1,5 +1,17 @@
-# opa-policies
-This repository is a collection of open policy agent(OPA) policies
+# OPA policies collection
+
+This repository is a collection of open policy agent(OPA) policies.
+The policies are packed into helm charts and support the opa gatekeeper.
+
+## Requirements
+
+- OPA gatekeeper is installed.
+
+  ```shell
+  helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
+  helm repo update
+  helm install gatekeeper/gatekeeper --generate-name
+  ```
 
 ## Usage example
 
@@ -53,3 +65,7 @@ This repository is a collection of open policy agent(OPA) policies
 ```bash
 opa test charts/*/opa -v
 ```
+
+## Author
+
+[Datadrivers GmbH](https://www.datadrivers.de)
