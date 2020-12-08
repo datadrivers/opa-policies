@@ -8,13 +8,19 @@ on:
       - "!main" # excludes branch main
 
 jobs:
-  validate:
+  test-policies:
     runs-on: ubuntu-latest
     steps:
       # Checking out source codes
       - name: Checkout source codes
         uses: actions/checkout@v2
-      - name: OPA Test
+      - name: OPA test
         uses: petroprotsakh/opa-test-action@v2.1
         with:
           tests: "*/opa"
+          options: "-v"
+      - name: OPA Test coverage
+        uses: petroprotsakh/opa-test-action@v2.1
+        with:
+          tests: "*/opa"
+          options: "-c"
