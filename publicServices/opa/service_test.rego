@@ -1,4 +1,4 @@
-package restrictLoadbalancers
+package publicServices
 
 loadbalancer = {
     "apiVersion": "v1",

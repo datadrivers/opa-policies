@@ -1,0 +1,24 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: restrictRegistries
+spec:
+  crd:
+    spec:
+      names:
+        kind: RestrictRegistries
+        listKind: RestrictRegistriesList
+        plural: restrictRegistries
+        singular: restrictRegistries
+      validation:
+        # Schema for the `parameters` field
+        openAPIV3Schema:
+          properties:
+            approvedRegistries:
+              type: array
+              items: string
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |-
+{{ .Files.Get "opa/main.rego" | indent 8 }}
+        

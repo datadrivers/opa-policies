@@ -1,0 +1,24 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: publicServices
+spec:
+  crd:
+    spec:
+      names:
+        kind: PublicService
+        listKind: PublicServicesList
+        plural: publicServices
+        singular: publicServices
+      validation:
+        # Schema for the `parameters` field
+        openAPIV3Schema:
+          properties:
+            approvedServices:
+              type: array
+              items: string
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |-
+{{ .Files.Get "opa/main.rego" | indent 8 }}
+        

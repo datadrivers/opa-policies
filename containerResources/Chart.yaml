@@ -1,0 +1,13 @@
+apiVersion: v2
+description: A Helm chart for a OPA Gatekeeper constraint template, that enforce the usage of the container resource definition
+name: opa-constraint-template-container-resources
+keywords:
+  - open policy agent
+  - policy
+  - constraint template
+  - container resources
+version: v0.1.0
+sources:
+  - https://github.com/datadrivers/opa-policies/tree/main/containerResources
+type: application
+icon: https://www.openpolicyagent.org/favicon.png

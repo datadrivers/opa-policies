@@ -1,0 +1,13 @@
+apiVersion: v2
+description: A Helm chart for OPA Gatekeeper constraint template, that enforce the usage of liveness and readyness probes
+name: opa-constraint-template-probes
+keywords:
+  - open policy agent
+  - policy
+  - constraint template
+  - probes
+version: v0.1.0
+sources:
+  - https://github.com/datadrivers/opa-policies/tree/main/probes
+type: application
+icon: https://www.openpolicyagent.org/favicon.png

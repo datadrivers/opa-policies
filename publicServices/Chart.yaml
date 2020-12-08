@@ -1,0 +1,13 @@
+apiVersion: v2
+description: A Helm chart for OPA Gatekeeper constraint template, that allows only approved services with type loadbalancer or type nodeport.
+name: opa-constraint-template-public-services
+keywords:
+  - open policy agent
+  - policy
+  - constraint template
+  - publicServices
+version: v0.1.0
+sources:
+  - https://github.com/datadrivers/opa-policies/tree/main/publicServices
+type: application
+icon: https://www.openpolicyagent.org/favicon.png

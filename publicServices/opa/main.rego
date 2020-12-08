@@ -1,4 +1,4 @@
-package restrictLoadbalancers
+package publicServices
 
 contains(array, elem) {
     array[_] = elem

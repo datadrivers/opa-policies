@@ -1,0 +1,33 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: restrictLoadbalancers
+spec:
+  crd:
+    spec:
+      names:
+        kind: RestrictLoadbalancer
+        listKind: RestrictLoadbalancersList
+        plural: restrictLoadbalancers
+        singular: restrictLoadbalancers
+      validation:
+        # Schema for the `parameters` field
+        openAPIV3Schema:
+          properties:
+            excludedDeployments:
+              type: array
+              items: string
+            excludedDaemonSets:
+              type: array
+              items: string
+            excludedStatefulSets:
+              type: array
+              items: string
+            excludedPods:
+              type: array
+              items: string
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |-
+{{ .Files.Get "opa/main.rego" | indent 8 }}
+        
