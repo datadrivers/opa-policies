@@ -79,7 +79,7 @@ cronjob = {
 
 test_unallowed_CronJob {
     registries := ["eu.gcr.io/test"]
-    results := violation with input.review.object as pod with input.parameters.approvedRegistries as registries
+    results := violation with input.review.object as cronjob with input.parameters.approvedRegistries as registries
 
     count(results) > 0
     results[i].msg == "Container <init> has an invalid image repo <eu.gcr.io/cicd/helloworld_init:v1.0.0>, allowed repos are eu.gcr.io/test"
@@ -87,6 +87,6 @@ test_unallowed_CronJob {
 
 test_allowed_CronJob {
     registries := ["eu.gcr.io/test", "eu.gcr.io/cicd"]
-    results := violation with input.review.object as pod with input.parameters.approvedRegistries as registries
+    results := violation with input.review.object as cronjob with input.parameters.approvedRegistries as registries
     count(results) == 0
 }
