@@ -17,10 +17,10 @@ jobs:
       - name: OPA test
         uses: petroprotsakh/opa-test-action@v2.1
         with:
-          tests: "*/opa"
+          tests: "charts/*/opa"
           options: "-v"
       - name: OPA Test coverage
         uses: petroprotsakh/opa-test-action@v2.1
         with:
-          tests: "*/opa"
+          tests: "charts/*/opa"
           options: "-c"
