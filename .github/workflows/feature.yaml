@@ -1,0 +1,20 @@
+---
+name: "Feature Branch"
+on:
+  push:
+    branches:
+      - "*" # matches every branch
+      - "*/*" # matches every branch containing a single '/'
+      - "!main" # excludes branch main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      # Checking out source codes
+      - name: Checkout source codes
+        uses: actions/checkout@v2
+      - name: OPA Test
+        uses: petroprotsakh/opa-test-action@v2.1
+        with:
+          tests: "*/opa"
