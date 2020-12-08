@@ -6,6 +6,7 @@ on:
       - "*" # matches every branch
       - "*/*" # matches every branch containing a single '/'
       - "!main" # excludes branch main
+      - "!gh-pages" #exclude
 
 jobs:
   test-policies:
