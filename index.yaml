@@ -35,6 +35,24 @@ entries:
     urls:
     - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-container-resources-v0.1.1/opa-constraint-template-container-resources-v0.1.1.tgz
     version: v0.1.1
+  opa-constraint-template-labels:
+  - apiVersion: v2
+    created: "2020-12-08T22:43:58.167922814Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that enforce specified labels.
+    digest: ef316eb6c07031a5f32587923a373caa8740265d7b9260849acd5d1d99627eb1
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - labels
+    name: opa-constraint-template-labels
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/labels
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-labels-v0.1.0/opa-constraint-template-labels-v0.1.0.tgz
+    version: v0.1.0
   opa-constraint-template-probes:
   - apiVersion: v2
     created: "2020-12-08T21:58:39.595942148Z"
