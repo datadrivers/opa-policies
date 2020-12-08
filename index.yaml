@@ -1,5 +1,59 @@
 apiVersion: v1
 entries:
+  opa-constraint-template-container-resources:
+  - apiVersion: v2
+    created: "2020-12-08T21:31:00.456107458Z"
+    description: A Helm chart for a OPA Gatekeeper constraint template, that enforce the usage of the container resource definition
+    digest: 76794563a9abb2f29fe6a701f1fc9047fb5d711bbcec1ea04b4eb5a8681e16c0
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - container resources
+    name: opa-constraint-template-container-resources
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/containerResources
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-container-resources-v0.1.1/opa-constraint-template-container-resources-v0.1.1.tgz
+    version: v0.1.1
+  opa-constraint-template-probes:
+  - apiVersion: v2
+    created: "2020-12-08T21:31:00.582275815Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that enforce the usage of liveness and readyness probes
+    digest: b6889d45d4d22b4025009a693ec9423bd0092e44d3f7addbec035055841d088d
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - probes
+    name: opa-constraint-template-probes
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/probes
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-probes-v0.1.1/opa-constraint-template-probes-v0.1.1.tgz
+    version: v0.1.1
+  opa-constraint-template-public-services:
+  - apiVersion: v2
+    created: "2020-12-08T21:31:00.681023855Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that allows only approved services with type loadbalancer or type nodeport.
+    digest: 80e92aff2d624caf77e0514c0234c75ecf22ff3a5ffd84420b0f41a9d5b469aa
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - publicServices
+    name: opa-constraint-template-public-services
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/publicServices
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-public-services-v0.1.1/opa-constraint-template-public-services-v0.1.1.tgz
+    version: v0.1.1
   opa-constraint-template-restrict-registries:
   - apiVersion: v2
     created: "2020-12-08T21:21:42.239367039Z"
