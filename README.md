@@ -29,9 +29,9 @@ This repository is a collection of open policy agent(OPA) policies
       match:
         kinds:
           - apiGroups: ["apps"]
-            kinds: ["Deployment", "StatefulSet", "DaemonSet", "Pod"]
+            kinds: ["Deployment", "StatefulSet", "DaemonSet"]
           - apiGroups: ["batch"]
-            kinds: ["Jobs", "CronJob"]
+            kinds: ["Job", "CronJob"]
           - apiGroups: [""]
             kinds: ["Pod"]
         excludedNamespaces:
