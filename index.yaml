@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  opa-constraint-template-restrict-registries:
+  - apiVersion: v2
+    created: "2020-12-08T21:21:42.239367039Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that allows only approved container registries
+    digest: 186a0e1c75a4bde456c1906f7cb5683edfc8d30c377d6bba680b85448b9b8859
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - restrictRegistries
+    name: opa-constraint-template-restrict-registries
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/restrictRegistries
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-restrict-registries-v0.1.2/opa-constraint-template-restrict-registries-v0.1.2.tgz
+    version: v0.1.2
+generated: "2020-12-08T21:21:42.090359949Z"
