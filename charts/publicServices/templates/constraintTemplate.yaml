@@ -6,10 +6,10 @@ spec:
   crd:
     spec:
       names:
-        kind: PublicService
-        listKind: PublicServicesList
-        plural: publicServices
-        singular: publicServices
+        kind: PublicServicePolicy
+        listKind: PublicServicePoliciesList
+        plural: publicServicePolicies
+        singular: publicServicePolicy
       validation:
         # Schema for the `parameters` field
         openAPIV3Schema:

@@ -6,10 +6,10 @@ spec:
   crd:
     spec:
       names:
-        kind: RestrictLoadbalancer
-        listKind: RestrictLoadbalancersList
-        plural: restrictLoadbalancers
-        singular: restrictLoadbalancers
+        kind: ProbesPolicy
+        listKind: ProbesPoliciesList
+        plural: probesPolicies
+        singular: probePolicy
       validation:
         # Schema for the `parameters` field
         openAPIV3Schema:

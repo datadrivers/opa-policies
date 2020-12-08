@@ -6,10 +6,10 @@ spec:
   crd:
     spec:
       names:
-        kind: RestrictRegistries
-        listKind: RestrictRegistriesList
-        plural: restrictRegistries
-        singular: restrictRegistries
+        kind: RestrictRegistriesPolicy
+        listKind: RestrictRegistriesPoliciesList
+        plural: restrictRegistriesPolicies
+        singular: restrictRegistriesPolicy
       validation:
         # Schema for the `parameters` field
         openAPIV3Schema:
