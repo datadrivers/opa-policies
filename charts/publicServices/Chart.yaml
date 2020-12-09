@@ -6,7 +6,7 @@ keywords:
   - policy
   - constraint template
   - publicServices
-version: v0.1.2
+version: v0.2.0
 sources:
   - https://github.com/datadrivers/opa-policies/tree/main/publicServices
 type: application

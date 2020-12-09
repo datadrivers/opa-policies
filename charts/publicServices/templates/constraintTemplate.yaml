@@ -1,7 +1,7 @@
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:
-  name: publicServices
+  name: {{ template "templateName" . }}
 spec:
   crd:
     spec:
