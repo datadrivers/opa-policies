@@ -2,6 +2,23 @@ apiVersion: v1
 entries:
   opa-constraint-template-container-resources:
   - apiVersion: v2
+    created: "2020-12-09T07:49:51.431992958Z"
+    description: A Helm chart for a OPA Gatekeeper constraint template, that enforce the usage of the container resource definition
+    digest: 0d3c46f4021ceabc38ed0eedd253dabf4814bb57e6a6a6fe5e0ebc99d610e7d9
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - container resources
+    name: opa-constraint-template-container-resources
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/containerResources
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-container-resources-v0.2.0/opa-constraint-template-container-resources-v0.2.0.tgz
+    version: v0.2.0
+  - apiVersion: v2
     created: "2020-12-08T21:58:39.45991747Z"
     description: A Helm chart for a OPA Gatekeeper constraint template, that enforce the usage of the container resource definition
     digest: 05a93f2d9dd5068cfe4cfb90b3bea75149f22e9d70f840ef06ee45fa45f6e834
@@ -37,6 +54,23 @@ entries:
     version: v0.1.1
   opa-constraint-template-labels:
   - apiVersion: v2
+    created: "2020-12-09T07:49:51.565899488Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that enforce specified labels.
+    digest: bdc450c429d158c22d5f5fcf8065ee66fa8d8e244d057ea437bcf2d729d8cac3
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - labels
+    name: opa-constraint-template-labels
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/labels
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-labels-v0.2.0/opa-constraint-template-labels-v0.2.0.tgz
+    version: v0.2.0
+  - apiVersion: v2
     created: "2020-12-08T22:43:58.167922814Z"
     description: A Helm chart for OPA Gatekeeper constraint template, that enforce specified labels.
     digest: ef316eb6c07031a5f32587923a373caa8740265d7b9260849acd5d1d99627eb1
@@ -54,6 +88,23 @@ entries:
     - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-labels-v0.1.0/opa-constraint-template-labels-v0.1.0.tgz
     version: v0.1.0
   opa-constraint-template-probes:
+  - apiVersion: v2
+    created: "2020-12-09T07:49:51.689239812Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that enforce the usage of liveness and readyness probes
+    digest: 3cf73aa55f3ce93d9db9d04079b4088c68fcdb38b5a0e88d51c7cc8d23cca094
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - probes
+    name: opa-constraint-template-probes
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/probes
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-probes-v0.2.0/opa-constraint-template-probes-v0.2.0.tgz
+    version: v0.2.0
   - apiVersion: v2
     created: "2020-12-08T21:58:39.595942148Z"
     description: A Helm chart for OPA Gatekeeper constraint template, that enforce the usage of liveness and readyness probes
@@ -90,6 +141,23 @@ entries:
     version: v0.1.1
   opa-constraint-template-public-services:
   - apiVersion: v2
+    created: "2020-12-09T07:49:51.821665727Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that allows only approved services with type loadbalancer or type nodeport.
+    digest: be58f331afd9981b1e81d73e2c1c8b89cdc41fd41d5bbe781a85fa923376d748
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - publicServices
+    name: opa-constraint-template-public-services
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/publicServices
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-public-services-v0.2.0/opa-constraint-template-public-services-v0.2.0.tgz
+    version: v0.2.0
+  - apiVersion: v2
     created: "2020-12-08T21:58:39.70908586Z"
     description: A Helm chart for OPA Gatekeeper constraint template, that allows only approved services with type loadbalancer or type nodeport.
     digest: ab5a22498f4bc06dc315a5b7c232e833460e1d632c5aa962be5727048987291f
@@ -124,6 +192,23 @@ entries:
     - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-public-services-v0.1.1/opa-constraint-template-public-services-v0.1.1.tgz
     version: v0.1.1
   opa-constraint-template-restrict-registries:
+  - apiVersion: v2
+    created: "2020-12-09T07:49:51.947188273Z"
+    description: A Helm chart for OPA Gatekeeper constraint template, that allows only approved container registries
+    digest: 82056cd8589eb7358c45ff8e769baf2ae2a874ef6db6d9e8c248f6ba305ea51e
+    icon: https://www.openpolicyagent.org/favicon.png
+    keywords:
+    - open policy agent
+    - policy
+    - constraint template
+    - restrictRegistries
+    name: opa-constraint-template-restrict-registries
+    sources:
+    - https://github.com/datadrivers/opa-policies/tree/main/restrictRegistries
+    type: application
+    urls:
+    - https://github.com/datadrivers/opa-policies/releases/download/opa-constraint-template-restrict-registries-v0.2.0/opa-constraint-template-restrict-registries-v0.2.0.tgz
+    version: v0.2.0
   - apiVersion: v2
     created: "2020-12-08T21:58:39.823107183Z"
     description: A Helm chart for OPA Gatekeeper constraint template, that allows only approved container registries
